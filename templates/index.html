@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %} Flask WTF {% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-5">Flask WTF</h1>
+        </div>
+        <form action="" method="POST">
+                <div class="form-group">
+                    <label for="text-field">Text field</label>
+                    <input type="text" class="form-control" id="text-field" name="text">
+                </div>
+                <div class="form-group">
+                    <label for="password-field">Password field</label>
+                    <input type="password" class="form-control" id="password-field" name="password">
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="checkbox-field" name="checkbox">
+                    <label class="form-check-label" for="checkbox-field">Checkbox field</label>
+                </div>
+                <div class="form-group">
+                    <label for="select-field">Select field</label>
+                    <select class="form-control" id="select-field" name="select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+    </div>
+{% endblock %}
